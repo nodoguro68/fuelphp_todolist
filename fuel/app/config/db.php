@@ -21,5 +21,20 @@
  */
 
 return array(
-
+    'active' => 'pdo',
+    'pdo' => array(
+        'type'        => 'pdo',
+        'connection'  => array(
+            'dsn' => 'mysql:host=localhost;dbname=fuelphp_todolist',
+            'username' => 'root',
+            'password' => 'root',
+            'persistent' => false,
+            'compress' => true,
+        ),
+        'identifier'   => '"',
+        'table_prefix'   => '',
+        'charset'        => 'utf8',
+        'enable_cache'   => true,
+        'profiling'      => false,
+    ),
 );
